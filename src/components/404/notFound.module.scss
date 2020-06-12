@@ -1,0 +1,129 @@
+@import "../../styles/variables.scss";
+
+.outer-wrapper {
+  padding-top: $vertical-rhythm * 5;
+  padding-bottom: $vertical-rhythm;
+  background-color: #3f3f3f;
+  min-height: 70vh;
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    rgba(47, 50, 56, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  h4 {
+    margin-bottom: $vertical-rhythm;
+  }
+  p {
+    margin-bottom: $vertical-rhythm * 2;
+  }
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  // margin-bottom: $vertical-rhythm;
+}
+
+.button {
+  background: transparent;
+  font-size: 1.1rem;
+  border: 0.1rem solid $button-color;
+  color: $button-color;
+  text-decoration: none;
+  // height: $vertical-rhythm * 2 - 0.5rem;
+  padding: 5px 15px;
+  //padding: 5px 15px;
+  border-radius: 0.5rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+  box-shadow: inset 0px 0px 0px $button-color;
+  &:hover {
+    background-color: $button-color;
+    border: 0.1rem solid $button-color;
+    color: rgba(47, 50, 56, 1);
+    box-shadow: inset 0px 0px 150px $button-color;
+  }
+  // &:before {
+  //   content: "";
+  //   background-color: #00f0ff;
+  //   border-radius: 1.1rem;
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   transform: scale(0.001, 0.001);
+  // }
+  &:focus {
+    outline: none !important;
+    // &:before {
+    //   animation: effect_dylan 0.8s ease-out;
+    // }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+// .button {
+//   background: transparent;
+//   font-size: 1.1rem;
+//   border: 0.1rem solid $button-color;
+//   color: $button-color;
+//   text-decoration: none;
+//   // height: $vertical-rhythm * 2 - 0.5rem;
+//   padding: 5px 15px;
+//   //padding: 5px 15px;
+//   border-radius: 0.5rem;
+//   position: relative;
+//   display: inline-block;
+//   cursor: pointer;
+//   transition: all 0.4s ease-in;
+//   box-shadow: inset 0px 0px 0px $button-color;
+//   &:hover {
+//     background-color: $button-color;
+//     border: 0.1rem solid $button-color;
+//     color: #3f3f3f;
+//     box-shadow: inset 0px 0px 150px $button-color;
+//   }
+//   // &:before {
+//   //   content: "";
+//   //   background-color: #00f0ff;
+//   //   border-radius: 1.1rem;
+//   //   display: block;
+//   //   position: absolute;
+//   //   top: 0;
+//   //   right: 0;
+//   //   bottom: 0;
+//   //   left: 0;
+//   //   transform: scale(0.001, 0.001);
+//   // }
+//   &:focus {
+//     outline: none !important;
+//     // &:before {
+//     //   animation: effect_dylan 0.8s ease-out;
+//     // }
+//   }
+//   @media (max-width: 767px) {
+//     width: 100%;
+//   }
+// }
+
+// @keyframes effect_dylan {
+//   50% {
+//     transform: scale(1.5, 1.5);
+//     opacity: 0;
+//   }
+//   99% {
+//     transform: scale(0.001, 0.001);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: scale(0.001, 0.001);
+//     opacity: 1;
+//   }
+// }

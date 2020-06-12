@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  // padding-bottom: $vertical-rhythm * 2;
+  min-height: 60vh;
+}

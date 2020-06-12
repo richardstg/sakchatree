@@ -1,0 +1,258 @@
+@import "../styles/variables.scss";
+
+.navbarUp {
+  transition: all 0.3s ease-in;
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+  li {
+    margin-bottom: 0;
+    list-style: none;
+    display: inline;
+  }
+  @media (max-width: 1199px) {
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+      display: block;
+    }
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    background-color: rgba(47, 50, 56, 0.8);
+  }
+}
+
+.navbarDown {
+  transition: all 0.3s ease-in;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background-color: rgba(47, 50, 56, 0.8);
+  text-align: center;
+  li {
+    margin-bottom: 0;
+    list-style: none;
+    display: inline;
+  }
+  @media (max-width: 1199px) {
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+      display: block;
+    }
+  }
+}
+
+// .navbar-hide {
+//   top: -5rem;
+//   background: green;
+// }
+
+// .navbar-show {
+//   top: 0;
+//   display: block;
+//   background: yellow;
+// }
+
+.nav-link {
+  color: #e6e6e6;
+  font-size: 1.05rem;
+  // font-weight: bold;
+  font-weight: 500;
+  margin-right: 3rem;
+  text-decoration: none;
+  font-family: $header-font;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* Wobble */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  -o-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  &:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    text-decoration: none;
+
+    /* Wobble */
+    animation: wobble-horizontal-on-hover 0.82s
+      cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    -moz-animation: wobble-horizontal-on-hover 0.82s
+      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Firefox */
+    -webkit-animation: wobble-horizontal-on-hover 0.82s
+      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Safari and Chrome */
+    -o-animation: wobble-horizontal-on-hover 0.82s
+      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Opera */
+    -ms-animation: wobble-horizontal-on-hover 0.82s
+      cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  // border: 2px solid transparent;
+  // border-radius: 30rem;
+  padding: 5px 15px;
+}
+.active-nav-link {
+  a {
+    // color: #ffc43d;
+    // color: #ff1955;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75),
+      0px -1px 1px rgba(0, 0, 0, 0.75);
+    // text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px #ffffff;
+    }
+  }
+  // color: #ff1955;
+  // // border-color: $button-color;
+  // &:hover {
+  //   color: #ff1955;
+  //   text-shadow: 0 0 5px #ff1955;
+  // }
+}
+
+.navbarBrand {
+  display: inline-flex;
+  align-items: center;
+  svg {
+    width: 40px;
+    opacity: 0.85;
+    margin-right: 8px;
+  }
+  p {
+    margin: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.toggler {
+  color: white;
+  background-color: white;
+}
+
+/*===================*/
+/* WOOBLE HORIZONTAL
+/*===================*/
+
+@-webkit-keyframes wobble-horizontal-on-hover {
+  10%,
+  90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes wobble-horizontal-on-hover {
+  10%,
+  90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@-moz-keyframes wobble-horizontal-on-hover  /* Firefox */ {
+  10%,
+  90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@-o-keyframes wobble-horizontal-on-hover  /* Opera */ {
+  10%,
+  90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+@-ms-keyframes wobble-horizontal-on-hover  /* IE */ {
+  10%,
+  90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

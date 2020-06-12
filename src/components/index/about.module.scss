@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.outer-wrapper {
+  min-height: 50vh;
+  padding-top: $vertical-rhythm * 2;
+  padding-bottom: $vertical-rhythm * 2;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  background: rgba(255, 255, 255, 1);
+  @include angle(before, true);
+}
+
+.inner-wrapper {
+}
+
+.title {
+  color: #363636;
+  // color: #ffffff;
+}
+
+.text {
+  margin-bottom: $vertical-rhythm;
+  color: #3f3f3f;
+  // color: #ffffff;
+}
+
+.row {
+  background-color: rgba(47, 50, 56, 0.85);
+}
+
+.image {
+  // transform: skew(0deg, 3deg);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  // transform: rotate(-1deg);
+  // margin: $vertical-rhythm;
+  // margin: 0;
+  // background-color: rgba(47, 50, 56, 0.85);
+  // padding-right: 10px;
+  // padding-bottom: 5px;
+  img {
+    // transform: skew(0deg, -3deg);
+  }
+
+  // background: url("../../images/about.jpg") no-repeat;
+  // width: 100%;
+
+  // -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  // clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  // clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  // &:before {
+  //   background-color: rgba(47, 50, 56, 0.85);
+  //   width: 105%;
+  // }
+}
+
+.rightColumn {
+  @media (max-width: 991px) {
+    order: 2;
+    padding-left: $vertical-rhythm * 2;
+    padding-right: $vertical-rhythm * 2;
+  }
+  @media (max-width: 767px) {
+    order: 2;
+    padding-left: $vertical-rhythm;
+    padding-right: $vertical-rhythm;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid rgba(51, 67, 100, 0.2);
+  padding-left: $vertical-rhythm * 2;
+}
+
+.leftColumn {
+  @media (max-width: 991px) {
+    text-align: center;
+    order: 1;
+    margin-bottom: $vertical-rhythm * 2;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  text-align: right;
+  //align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // padding: 0;
+  padding-right: $vertical-rhythm * 2;
+}
