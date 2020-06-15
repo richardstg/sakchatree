@@ -1,15 +1,21 @@
 @import "../../styles/variables.scss";
+.background-image {
+  background: url("../../images/wrapped-hands-bw.jpg") no-repeat;
+  background-position: right 0px bottom 0px;
+  // opacity: 0.2;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .outer-wrapper {
   padding-top: $vertical-rhythm * 5;
   padding-bottom: $vertical-rhythm;
-  background-color: #3f3f3f;
   min-height: 70vh;
   position: relative;
   background: linear-gradient(
     45deg,
-    rgba(47, 50, 56, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(47, 50, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
   );
   h4 {
     margin-bottom: $vertical-rhythm;

@@ -1,27 +1,36 @@
 @import "../../styles/variables.scss";
 
+.background-image {
+  background: url("../../images/wrapped-hands-bw.jpg") no-repeat;
+  background-position: right 0px bottom 0px;
+  // opacity: 0.2;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media (max-width: 780px) {
+    background-position: right -220px bottom 0px;
+  }
+  @media (max-width: 480px) {
+    background-position: right -300px bottom 0px;
+  }
+}
+
 .outer-wrapper {
   min-height: 50vh;
   padding-top: $vertical-rhythm * 2;
   padding-bottom: $vertical-rhythm * 2;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: rgba(47, 50, 56, 0.025);
-  // @include angle(after, true);
-
   background: linear-gradient(
     45deg,
-    rgba(47, 50, 56, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(47, 50, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
   );
 
-  // box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(0, 0, 0, 1) 0%,
+  //   rgba(0, 0, 0, 0.2) 100%
+  // );
 }
 
 .inner-wrapper {
@@ -40,16 +49,36 @@
   color: rgba(255, 255, 255, 0.911);
 }
 
+.color-overlay {
+  &:after {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(47, 50, 56, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
+
 .image {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  // transform: rotate(3deg);
-  // margin: $vertical-rhythm;
-  // margin-top: 0;
 }
 
 .map {
   width: 100%;
   min-height: 300px;
+  // &:after {
+  //   background: linear-gradient(
+  //     45deg,
+  //     rgba(47, 50, 56, 0.8) 0%,
+  //     rgba(0, 0, 0, 0.8) 100%
+  //   );
+  // }
 }
 
 .leftColumn {
@@ -76,7 +105,7 @@
   @media (max-width: 991px) {
     text-align: center;
     order: 1;
-    margin-bottom: $vertical-rhythm * 2;
+    margin-bottom: $vertical-rhythm;
     padding-right: 0;
     padding-left: 0;
   }

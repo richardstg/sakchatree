@@ -55,13 +55,16 @@
   color: #e6e6e6;
   font-size: 1.05rem;
   // font-weight: bold;
-  font-weight: 500;
+  // font-weight: 500;
   margin-right: 3rem;
   text-decoration: none;
   font-family: $header-font;
   transition: 0.5s;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  // text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75),
+    0px -1px 1px rgba(0, 0, 0, 0.75);
 
   /* Wobble */
   display: inline-block;
@@ -100,9 +103,9 @@
     // color: #ffc43d;
     // color: #ff1955;
     color: #ffffff;
-    text-shadow: 0 0 5px #ffffff;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75),
       0px -1px 1px rgba(0, 0, 0, 0.75);
+    // text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
     // text-decoration: none;
 
     &:hover {

@@ -1,23 +1,11 @@
 import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { Link } from "gatsby"
-import { ParallaxBanner } from "react-scroll-parallax"
 import notFoundStyles from "./notFound.module.scss"
 
 const NotFound = () => {
   return (
-    <ParallaxBanner
-      className="banner"
-      layers={[
-        {
-          amount: 0.2,
-          image: require("../../images/wrapped-hands.jpg"),
-        },
-      ]}
-      style={{
-        height: "100%",
-      }}
-    >
+    <div className={notFoundStyles.backgroundImage}>
       <Container className={notFoundStyles.outerWrapper} fluid>
         <Container className={notFoundStyles.innerWrapper}>
           <Row>
@@ -41,7 +29,7 @@ const NotFound = () => {
           </Row>
         </Container>
       </Container>
-    </ParallaxBanner>
+    </div>
   )
 }
 

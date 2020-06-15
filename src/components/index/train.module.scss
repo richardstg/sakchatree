@@ -1,5 +1,11 @@
 @import "../../styles/variables.scss";
 
+.background-image {
+  background: url("../../images/training-clinch-bw.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .outer-wrapper {
   min-height: 50vh;
   padding-top: $vertical-rhythm * 2;
@@ -8,39 +14,21 @@
   // flex-direction: column;
   // align-items: center;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  background-color: rgba(47, 50, 56, 0.025);
-  // @include angle(after, true);
-
+  background-color: rgba(47, 50, 56, 0.85);
   background: linear-gradient(
     45deg,
-    rgba(47, 50, 56, 0.8) 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(47, 50, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
   );
 
-  // box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-
-  // &:before {
-  //   content: ""; // ::before and ::after both require content
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: url("../../images/ring.jpg") no-repeat;
-  //   opacity: 0.2;
-  //   background-size: cover;
-
-  //   // background-attachment: fixed;
-  //   // overflow: hidden;
-  // }
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(0, 0, 0, 1) 0%,
+  //   rgba(0, 0, 0, 0.2) 100%
+  // );
 }
 
 .inner-wrapper {
-  // transform: skew(0deg, 2deg);
 }
 
 .title {
@@ -86,7 +74,7 @@
   @media (max-width: 991px) {
     text-align: center;
     order: 1;
-    margin-bottom: $vertical-rhythm * 2;
+    margin-bottom: $vertical-rhythm;
     padding-right: 0;
     padding-left: 0;
   }

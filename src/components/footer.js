@@ -16,7 +16,7 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={{ size: 12, offset: 0 }}>
             <p>
-              12​ Soi​ 8​ Charenmuang Road, T.​ Tasala, A.Muang​ Chiang mai​
+              12​ Soi​ 8​ Charenmuang Road, T.​ Tasala, A. Muang​ Chiang Mai​
               50000​ Thailand
             </p>
           </Col>

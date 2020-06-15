@@ -3,28 +3,27 @@ import { Container, Row, Col } from "reactstrap"
 
 import introStyles from "./intro.module.scss"
 import LandingPageLogoSVG from "../svg/landingPageLogoSVG"
-// import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
-import { ParallaxBanner } from "react-scroll-parallax"
+// import { ParallaxBanner } from "react-scroll-parallax"
 
 const Intro = () => {
   return (
-    <ParallaxBanner
-      className="banner"
-      layers={[
-        {
-          amount: 0.2,
-          image: require("../../images/fight-corner.jpg"),
-        },
-      ]}
-      style={{
-        height: "100%",
-        // transform: "skew(0deg, -2deg)",
-        // top: "-55px",
-        // webkitClipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
-        // clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
-      }}
-    >
-      {/* <Container className={introStyles.colorLayer} fluid> */}
+    // <ParallaxBanner
+    //   className="banner"
+    //   layers={[
+    //     {
+    //       amount: 0.2,
+    //       image: require("../../images/fight-corner.jpg"),
+    //     },
+    //   ]}
+    //   style={{
+    //     height: "100%",
+    //     // transform: "skew(0deg, -2deg)",
+    //     // top: "-55px",
+    //     // webkitClipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
+    //     // clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
+    //   }}
+    // >
+    <div className={introStyles.backgroundImage}>
       <Container id="intro" className={introStyles.outerWrapper} fluid>
         <Container className={introStyles.innerWrapper}>
           <Row className={introStyles.row}>
@@ -74,8 +73,8 @@ const Intro = () => {
           </Row>
         </Container>
       </Container>
-      {/* </Container> */}
-    </ParallaxBanner>
+    </div>
+    // </ParallaxBanner>
   )
 }
 
