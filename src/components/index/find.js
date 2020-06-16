@@ -42,7 +42,7 @@ const Find = () => {
                   {/* <div className={findStyles.colorOverlay}> */}
                   <iframe
                     title="Sakchatri Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.3374347772236!2d99.02307084765003!3d18.78256089345094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da2559d64b21a7%3A0xf4711261949da357!2sGondor%20guesthouse!5e0!3m2!1ssv!2sth!4v1591068279624!5m2!1ssv!2sth"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15110.037827890736!2d99.01360025472141!3d18.775436025445845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a4f3057193b30d6!2sSakchatree!5e0!3m2!1sen!2sth!4v1592295634728!5m2!1sen!2sth"
                     frameborder="0"
                     allowfullscreen=""
                     ariaHidden="false"
