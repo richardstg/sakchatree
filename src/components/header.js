@@ -34,7 +34,6 @@ const Header = props => {
       <Scroll type="id" element="intro">
         <a aria-label="Hem" className={headerStyles.navbarBrand} href="!#">
           <HeaderLogoSVG className={headerStyles.logo} />
-          {/* <p>Sakchatri Muay Thai</p> */}
         </a>
       </Scroll>
       <NavbarToggler className={headerStyles.toggler} onClick={toggle} />

@@ -51,8 +51,8 @@ const Train = () => {
                     fights. Needless to say, fighting is optional.
                   </p>
                   <p className={trainStyles.text}>
-                    Training is every day 18.00-20.00. The price is 2000 Baht
-                    per month, 700 Baht per week, and 200 Bath per session.
+                    Training is Mon-Sat 18.00-20.00. The price is 4000 Baht
+                    per month, 1200 Baht per week, and 200 Bath per session.
                   </p>
                 </div>
               </Col>

@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .background-image {
-  background: url("../../images/fight-corner-bw.jpg") no-repeat;
+  background: url("../../images/fight-corner-retro.jpg") no-repeat;
   background-position: right 0px bottom -80px;
   // opacity: 0.2;
   background-size: cover;
@@ -18,20 +18,32 @@
   @media (max-width: 1230px) {
     background-position: right 0px bottom 30px;
   }
+  @media (max-width: 1000px) {
+    background-position: right -50px bottom 30px;
+  }
   @media (max-width: 900px) {
-    background-position: right -130px bottom 30px;
+    background-position: right -150px bottom 30px;
   }
   @media (max-width: 780px) {
-    background-position: right -220px bottom 30px;
+    background-position: right -240px bottom 30px;
+  }
+  @media (max-width: 700px) {
+    background-position: right -270px bottom 30px;
   }
   @media (max-width: 620px) {
-    background-position: right -300px bottom 30px;
+    background-position: right -320px bottom 30px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 550px) {
     background-position: right -370px bottom 30px;
   }
-  @media (max-width: 390px) {
-    background-position: right -430px bottom 30px;
+  @media (max-width: 450px) {
+    background-position: right -400px bottom 30px;
+  }
+  @media (max-width: 400px) {
+    background-position: right -420px bottom 30px;
+  }
+  @media (max-width: 350px) {
+    background-position: right -450px bottom 30px;
   }
 }
 
@@ -71,6 +83,7 @@
   font-size: 3.9rem;
   margin-bottom: 0;
   font-weight: bolder;
+  font-weight: 900;
   color: #ffff;
   opacity: 0.8;
 }
