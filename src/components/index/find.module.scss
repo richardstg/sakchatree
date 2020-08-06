@@ -12,6 +12,10 @@
   @media (max-width: 750px) {
     background-position: right -220px bottom 0px;
   }
+  @media (max-width: 568px) {
+    background-attachment: scroll;
+    // background-position: right -300px bottom 0px;
+  }
   @media (max-width: 500px) {
     background-position: right -300px bottom 0px;
   }

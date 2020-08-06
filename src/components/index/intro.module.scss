@@ -33,17 +33,12 @@
   @media (max-width: 620px) {
     background-position: right -320px bottom 30px;
   }
-  @media (max-width: 550px) {
-    background-position: right -370px bottom 30px;
-  }
-  @media (max-width: 450px) {
-    background-position: right -400px bottom 30px;
+  @media (max-width: 568px) {
+    background-attachment: scroll;
+    background-position: right -300px bottom 0px;
   }
   @media (max-width: 400px) {
-    background-position: right -420px bottom 30px;
-  }
-  @media (max-width: 350px) {
-    background-position: right -450px bottom 30px;
+    background-position: right -350px bottom 0px;
   }
 }
 
