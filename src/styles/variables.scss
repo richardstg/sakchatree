@@ -1,6 +1,8 @@
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+
 /* SCSS Variables */
 $base-line-height: 1.6;
-$base-font-size: 1.1rem;
+$base-font-size: 1rem;
 $vertical-rhythm: $base-line-height * $base-font-size;
 
 // $body-font: "Open Sans", sans-serif;
@@ -9,6 +11,9 @@ $vertical-rhythm: $base-line-height * $base-font-size;
 
 $body-font: "IBM Plex Sans", sans-serif;
 $header-font: "IBM Plex Serif", serif;
+
+$header-font: "Bebas Neue", cursive;
+$body-font: "Roboto", sans-serif;
 
 // $header-color: #363636;
 // $body-color: #3f3f3f;

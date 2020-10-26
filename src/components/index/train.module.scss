@@ -1,19 +1,50 @@
 @import "../../styles/variables.scss";
 
 .background-image {
-  background: url("../../images/training-clinch-retro.jpg") no-repeat;
+  background: url("../../images/training-kick-retro.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 568px) {
     background-attachment: scroll;
     // background-position: right -300px bottom 0px;
+    // background-position: right 0 bottom 0;
+  }
+  @media (max-width: 1000px) {
+    background-position: right -40px bottom 0;
+  }
+  @media (max-width: 900px) {
+    background-position: right -150px bottom 0;
+  }
+  @media (max-width: 750px) {
+    background-position: right -200px bottom 0;
+  }
+  @media (max-width: 650px) {
+    background-position: right -320px bottom 0;
+  }
+  @media (max-width: 580px) {
+    background-position: right -230px bottom 0;
+  }
+  @media (max-width: 480px) {
+    background-position: right -250px bottom 0;
+  }
+  @media (max-width: 420px) {
+    background-position: right -400px bottom 0;
+  }
+  @media (max-width: 360px) {
+    background-position: right -470px bottom 0;
+  }
+  @media (max-width: 320px) {
+    background-position: right -550px bottom 0;
+  }
+  @media (max-width: 290px) {
+    background-position: right -600px bottom 0;
   }
 }
 
 .outer-wrapper {
   min-height: 50vh;
   padding-top: $vertical-rhythm * 2;
-  padding-bottom: $vertical-rhythm * 2;
+  padding-bottom: $vertical-rhythm * 4;
   position: relative;
   background-color: rgba(47, 50, 56, 0.85);
   background: linear-gradient(
@@ -24,16 +55,17 @@
 }
 
 .inner-wrapper {
+  text-align: center;
 }
 
 .title {
   margin-bottom: $vertical-rhythm;
-  color: rgba(255, 255, 255, 0.959);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .text {
   margin-bottom: $vertical-rhythm;
-  color: rgba(255, 255, 255, 0.911);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .image {
@@ -43,40 +75,40 @@
   // margin-top: 0;
 }
 
-.leftColumn {
-  @media (max-width: 991px) {
-    order: 2;
-    padding-left: $vertical-rhythm * 2;
-    padding-right: $vertical-rhythm * 2;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: none;
-  }
-  @media (max-width: 767px) {
-    order: 2;
-    padding-left: $vertical-rhythm;
-    padding-right: $vertical-rhythm;
-  }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  padding-right: $vertical-rhythm * 2;
-}
+// .leftColumn {
+//   @media (max-width: 991px) {
+//     order: 2;
+//     padding-left: $vertical-rhythm * 2;
+//     padding-right: $vertical-rhythm * 2;
+//     border-left: 1px solid rgba(255, 255, 255, 0.2);
+//     border-right: none;
+//   }
+//   @media (max-width: 767px) {
+//     order: 2;
+//     padding-left: $vertical-rhythm;
+//     padding-right: $vertical-rhythm;
+//   }
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   border-right: 1px solid rgba(255, 255, 255, 0.2);
+//   padding-right: $vertical-rhythm * 2;
+// }
 
-.rightColumn {
-  @media (max-width: 991px) {
-    text-align: center;
-    order: 1;
-    margin-bottom: $vertical-rhythm * 2;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  @media (max-width: 767px) {
-    margin-bottom: $vertical-rhythm;
-  }
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: $vertical-rhythm * 2;
-}
+// .rightColumn {
+//   @media (max-width: 991px) {
+//     text-align: center;
+//     order: 1;
+//     margin-bottom: $vertical-rhythm * 2;
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+//   @media (max-width: 767px) {
+//     margin-bottom: $vertical-rhythm;
+//   }
+//   text-align: right;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding-left: $vertical-rhythm * 2;
+// }

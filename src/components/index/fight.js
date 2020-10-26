@@ -33,7 +33,7 @@ const Fight = () => {
                 data-sal-duration="800"
                 data-sal-easing="ease-out-bounce"
               >
-                <h2 className={fightStyles.title}>Fight</h2>
+                <h3 className={fightStyles.title}>Fight</h3>
                 <p className={fightStyles.text}>
                   Many of our students are frequent fighters at stadiums and
                   festival events in Chiang Mai and its neighboring cities.

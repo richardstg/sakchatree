@@ -39,9 +39,8 @@
     "react-spring": "^8.0.27",
     "reactstrap": "^8.4.1",
     "smoothscroll-polyfill": "^0.4.4",
-    "typeface-ibm-plex-sans": "0.0.75",
-    "typeface-ibm-plex-serif": "0.0.75",
-    "typeface-open-sans": "0.0.75"
+    "typeface-bebas-neue": "^1.1.13",
+    "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",

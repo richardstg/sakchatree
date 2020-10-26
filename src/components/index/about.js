@@ -23,12 +23,7 @@ const About = () => {
                 data-sal-easing="ease-out-bounce"
                 className={aboutStyles.image}
               >
-                <AboutImage
-                  style={{
-                    margin: "0",
-                    padding: "0",
-                  }}
-                />
+                <AboutImage />
               </div>
             </Col>
             <Col className={aboutStyles.rightColumn} md={12} lg={6}>
@@ -38,7 +33,7 @@ const About = () => {
                 data-sal-duration="800"
                 data-sal-easing="ease-in-out-back"
               >
-                <h2 className={aboutStyles.title}>About</h2>
+                <h3 className={aboutStyles.title}>About</h3>
                 <p className={aboutStyles.text}>
                   We are a family-style gym on the east side of Chiang Mai,
                   owned and run by Git, former Lumpinee and Rajadamnern

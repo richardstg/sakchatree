@@ -2,8 +2,8 @@ import React from "react"
 
 import Header from "./header"
 import Footer from "./footer"
-import "typeface-ibm-plex-sans"
-import "typeface-ibm-plex-serif"
+import "typeface-bebas-neue"
+import "typeface-roboto"
 
 import "../styles/app.scss"
 import layoutStyles from "./layout.module.scss"

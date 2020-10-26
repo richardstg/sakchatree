@@ -1,67 +1,57 @@
 @import "../styles/variables.scss";
 
-.navbarUp {
-  transition: all 0.3s ease-in;
-  background: transparent;
-  box-shadow: none;
+.navbar {
+  transition: all 0.2s ease-in;
   text-align: center;
+  padding: 20px !important;
+  z-index: 110;
+  &:focus {
+    outline: none;
+  }
   li {
     margin-bottom: 0;
     list-style: none;
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
   }
   @media (max-width: 1199px) {
+    padding: 10px 20px !important;
+    ul {
+      padding: 0;
+    }
     li {
       margin-bottom: 20px;
       list-style: none;
       display: block;
+      margin-right: 0;
     }
+  }
+}
+
+.up {
+  @media (max-width: 1199px) {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-    background-color: rgba(47, 50, 56, 0.8);
+    background: rgba(47, 50, 56, 0.8);
   }
 }
 
-.navbarDown {
-  transition: all 0.3s ease-in;
+.down {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  background-color: rgba(47, 50, 56, 0.8);
-  text-align: center;
-  li {
-    margin-bottom: 0;
-    list-style: none;
-    display: inline;
-  }
-  @media (max-width: 1199px) {
-    li {
-      margin-bottom: 20px;
-      list-style: none;
-      display: block;
-    }
-  }
+  background: rgba(47, 50, 56, 0.8);
 }
-
-// .navbar-hide {
-//   top: -5rem;
-//   background: green;
-// }
-
-// .navbar-show {
-//   top: 0;
-//   display: block;
-//   background: yellow;
-// }
 
 .nav-link {
-  color: #e6e6e6;
+  color: #e6e6e6b9;
   font-size: 1.05rem;
   // font-weight: bold;
+  // text-transform: lowercase;
   font-weight: 500;
-  margin-right: 3rem;
   text-decoration: none;
   font-family: $header-font;
   transition: 0.5s;
-  letter-spacing: 1px;
-  // text-transform: uppercase;
+  letter-spacing: 1.5px;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75),
     0px -1px 1px rgba(0, 0, 0, 0.75);
 
@@ -93,30 +83,18 @@
     backface-visibility: hidden;
     perspective: 1000px;
   }
-  // border: 2px solid transparent;
-  // border-radius: 30rem;
   padding: 5px 15px;
 }
+
 .active-nav-link {
   a {
-    // color: #ffc43d;
-    // color: #ff1955;
     color: #ffffff;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
-    // text-shadow: 1px -1px rgba(0, 0, 0, 0.2);
-    // text-decoration: none;
-
     &:hover {
       color: #ffffff;
       text-shadow: 0 0 5px #ffffff;
     }
   }
-  // color: #ff1955;
-  // // border-color: $button-color;
-  // &:hover {
-  //   color: #ff1955;
-  //   text-shadow: 0 0 5px #ff1955;
-  // }
 }
 
 .navbarBrand {
@@ -135,9 +113,83 @@
   }
 }
 
+/* Navbar Hamburger animation */
+
+$color: #e6e6e6;
+
+@mixin btn($left, $top) {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  // top: $top;
+  // left: $left;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &:active {
+    background: rgba(255, 255, 255, 0.116);
+  }
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  // top: 30px;
+  background-color: $color;
+  margin-left: 1.75px;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
 .toggler {
-  color: white;
-  background-color: white;
+  border: none !important;
+  outline: none !important;
+  @include btn(0, 0);
+  .icon {
+    @include icon(4px, 30px);
+    &:before {
+      @include icon-before(4px, 30px, -10px);
+    }
+    &:after {
+      @include icon-after(4px, 30px, 10px);
+    }
+  }
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /*===================*/

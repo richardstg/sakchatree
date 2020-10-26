@@ -27,11 +27,14 @@
   @media (max-width: 780px) {
     background-position: right -240px bottom 30px;
   }
+  @media (max-width: 767px) {
+    background-position: right -240px bottom 10px;
+  }
   @media (max-width: 700px) {
-    background-position: right -270px bottom 30px;
+    background-position: right -270px bottom 10px;
   }
   @media (max-width: 620px) {
-    background-position: right -320px bottom 30px;
+    background-position: right -320px bottom 10px;
   }
   @media (max-width: 568px) {
     background-attachment: scroll;
@@ -75,12 +78,14 @@
 }
 
 .title {
-  font-size: 3.9rem;
+  font-size: 6.5rem;
   margin-bottom: 0;
+  margin-top: 0;
   font-weight: bolder;
   font-weight: 900;
   color: #ffff;
   opacity: 0.8;
+  letter-spacing: 1.5px;
 }
 
 .subTitle {
@@ -159,26 +164,44 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 5.6rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 4.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 3.3rem;
   }
 }
 
 @media screen and (max-width: 475px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 2.9rem;
   }
 }
 
 @media screen and (max-width: 433px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
 }
 
 @media screen and (max-width: 371px) {
   .title {
-    font-size: 1.3rem;
+    font-size: 2.2rem;
   }
 }
