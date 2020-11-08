@@ -1,13 +1,9 @@
-// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap');
 
 /* SCSS Variables */
 $base-line-height: 1.6;
 $base-font-size: 1rem;
 $vertical-rhythm: $base-line-height * $base-font-size;
-
-// $body-font: "Open Sans", sans-serif;
-// $header-font: "Proza Libre", sans-serif;
-// $header-font: 'IBM Plex Sans', sans-serif;
 
 $body-font: "IBM Plex Sans", sans-serif;
 $header-font: "IBM Plex Serif", serif;
@@ -15,8 +11,9 @@ $header-font: "IBM Plex Serif", serif;
 $header-font: "Bebas Neue", cursive;
 $body-font: "Roboto", sans-serif;
 
-// $header-color: #363636;
-// $body-color: #3f3f3f;
+$banner-font: 'Permanent Marker', cursive;
+$banner-font: 'Sedgwick Ave Display', cursive;
+
 $header-color: #eeeeee;
 $body-color: #ebebeb;
 

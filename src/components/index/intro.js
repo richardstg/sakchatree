@@ -26,18 +26,6 @@ const Intro = () => {
     <div className={introStyles.backgroundImage}>
       <Container id="intro" className={introStyles.outerWrapper} fluid>
         <Container className={introStyles.innerWrapper}>
-          <Row className={introStyles.row}>
-            <Col className={introStyles.leftColumn} xs={12} md={3}>
-              <div
-                data-sal="fade"
-                data-sal-delay="100"
-                data-sal-duration="800"
-                data-sal-easing="ease-out-bounce"
-              >
-                <LandingPageLogoSVG />
-              </div>
-            </Col>
-            <Col className={introStyles.rightColumn} xs={12} md={9}>
               <div
                 data-sal="fade"
                 data-sal-delay="300"
@@ -69,8 +57,6 @@ const Intro = () => {
                   mollit et quis deserunt dolore reprehenderit.
                 </p>
               </div> */}
-            </Col>
-          </Row>
         </Container>
       </Container>
     </div>
