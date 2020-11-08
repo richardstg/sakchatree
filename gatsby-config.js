@@ -17,7 +17,7 @@ module.exports = {
     description: "A family-style gym on the east side of Chiang Mai.",
     url: "https://sakchatrimuaythai.com",
     siteUrl: "https://sakchatrimuaythai.com",
-    image: "/favicon.svg",
+    image: "/sakchatree.png",
     twitterUsername: "",
   },
   plugins: [
