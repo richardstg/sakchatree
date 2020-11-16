@@ -72,28 +72,36 @@ const Header = props => {
                 </a>
               </Scroll> */}
               </NavItem>
-              <NavItem className={classes.NavItem}>
+              <NavItem className={classes.NavItem} onClick={() => {
+                  setIsOpen(false)
+                }}>
                 <Scroll type="id" element="about">
                   <a className={classes.navLink} href="!#">
                     About
                   </a>
                 </Scroll>
               </NavItem>
-              <NavItem className={classes.NavItem}>
+              <NavItem className={classes.NavItem} onClick={() => {
+                  setIsOpen(false)
+                }}>
                 <Scroll type="id" element="train">
                   <a className={classes.navLink} href="!#">
                     Train
                   </a>
                 </Scroll>
               </NavItem>
-              <NavItem className={classes.NavItem}>
+              <NavItem className={classes.NavItem} onClick={() => {
+                  setIsOpen(false)
+                }}>
                 <Scroll type="id" element="fight">
                   <a className={classes.navLink} href="!#">
                     Fight
                   </a>
                 </Scroll>
               </NavItem>
-              <NavItem className={classes.NavItem}>
+              <NavItem className={classes.NavItem} onClick={() => {
+                  setIsOpen(false)
+                }}>
                 <Scroll type="id" element="find">
                   <a className={classes.navLink} href="!#">
                     Find Us
