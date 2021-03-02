@@ -1,15 +1,62 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
+.background-image {
+  position: relative;
+  background: url("../../images/gloves-fight-retro.jpg") no-repeat;
+  background-size: cover;
+  @media (max-width: 568px) {
+    background-attachment: scroll;
+    // background-position: right -300px bottom 0px;
+    // background-position: right 0 bottom 0;
+  }
+  // @media (max-width: 1000px) {
+  //   background-position: right -40px bottom 0;
+  // }
+  // @media (max-width: 900px) {
+  //   background-position: right -150px bottom 0;
+  // }
+  // @media (max-width: 750px) {
+  //   background-position: right -200px bottom 0;
+  // }
+  // @media (max-width: 650px) {
+  //   background-position: right -320px bottom 0;
+  // }
+  // @media (max-width: 580px) {
+  //   background-position: right -230px bottom 0;
+  // }
+  // @media (max-width: 480px) {
+  //   background-position: right -250px bottom 0;
+  // }
+  // @media (max-width: 420px) {
+  //   background-position: right -400px bottom 0;
+  // }
+  // @media (max-width: 360px) {
+  //   background-position: right -470px bottom 0;
+  // }
+  // @media (max-width: 320px) {
+  //   background-position: right -550px bottom 0;
+  // }
+  // @media (max-width: 290px) {
+  //   background-position: right -600px bottom 0;
+  // }
+}
+
 .outer-wrapper {
+  position: relative;
   min-height: 50vh;
   padding-top: $vertical-rhythm * 2;
   padding-bottom: $vertical-rhythm * 2;
-  background: $background-color;
-  @include angle(before, true);
+  // background: $background-color;
+  // // @include angle(before, true);
+  // background-image: url("../../images/noisy.png");
+  // position: relative;
+
+  // background-attachment: fixed;
 }
 
 .inner-wrapper {
+  text-align: center;
 }
 
 .title {
@@ -25,6 +72,30 @@
 
 .row {
   background-color: rgba(47, 50, 56, 0.85);
+}
+
+.overLay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // mix-blend-mode: overlay;
+  background: linear-gradient(
+    45deg,
+    rgba(47, 50, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/noisy2.png");
+  opacity: 0.1;
 }
 
 .image {

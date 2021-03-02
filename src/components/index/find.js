@@ -1,11 +1,13 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { Container } from "reactstrap"
 
 import findStyles from "./find.module.scss"
 
 const Find = () => {
   return (
     <div className={findStyles.backgroundImage}>
+      <div className={findStyles.noise}></div>
+      <div className={findStyles.overLay}></div>
       <Container id="find" className={findStyles.outerWrapper} fluid>
         <Container className={findStyles.innerWrapper}>
           <div

@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 
 .background-image {
+  position: relative;
   background: url("../../images/fight-corner-retro.jpg") no-repeat;
   background-position: right 0px bottom -80px;
   // opacity: 0.2;
@@ -55,11 +56,11 @@
   //text-align: center;
   // background-color: rgba(47, 50, 56, 0.85);
 
-  background: linear-gradient(
-    45deg,
-    rgba(47, 50, 56, 1) 0%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(47, 50, 56, 1) 0%,
+  //   rgba(0, 0, 0, 0.2) 100%
+  // );
 
   // background: linear-gradient(
   //   45deg,
@@ -83,7 +84,7 @@
   margin: 0;
   // font-weight: bold;
   color: #ffff;
-  opacity: 0.8;
+  // opacity: 0.8;
   font-family: $banner-font;
 }
 
@@ -125,6 +126,30 @@
     width: 80%;
     opacity: 0.8;
   }
+}
+
+.overLay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // mix-blend-mode: overlay;
+  background: linear-gradient(
+    45deg,
+    rgba(47, 50, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/noisy2.png");
+  opacity: 0.1;
 }
 
 /* Responsive styles */

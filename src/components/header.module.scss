@@ -34,12 +34,14 @@
   @media (max-width: 1199px) {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
     background: rgba(47, 50, 56, 0.8);
+    background-image: url("../images/noisy.png");
   }
 }
 
 .down {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
   background: rgba(47, 50, 56, 0.8);
+  background-image: url("../images/noisy.png");
 }
 
 .nav-link {
@@ -103,7 +105,11 @@
   svg {
     width: 40px;
     opacity: 0.85;
-    margin-right: 8px;
+    // margin-right: 8px;
+    margin: 0 40px;
+    @media (max-width: 1199px) {
+      margin: 0 15px;
+    }
   }
   p {
     margin: 0;

@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { Container } from "reactstrap"
 // import { ParallaxBanner } from "react-scroll-parallax"
 
 import trainStyles from "./train.module.scss"
@@ -20,6 +20,8 @@ const Train = () => {
     //   }}
     // >
     <div className={trainStyles.backgroundImage}>
+      <div className={trainStyles.noise}></div>
+      <div className={trainStyles.overLay}></div>
       <Container id="train" className={trainStyles.outerWrapper} fluid>
         <Container className={trainStyles.innerWrapper}>
           <div

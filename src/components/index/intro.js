@@ -24,17 +24,19 @@ const Intro = () => {
     //   }}
     // >
     <div className={introStyles.backgroundImage}>
+      <div className={introStyles.noise}></div>
+      <div className={introStyles.overLay}></div>
       <Container id="intro" className={introStyles.outerWrapper} fluid>
         <Container className={introStyles.innerWrapper}>
-              <div
-                data-sal="fade"
-                data-sal-delay="300"
-                data-sal-duration="1200"
-                data-sal-easing="ease-in-back"
-              >
-                <h1 className={introStyles.title}>SAKCHATREE MUAY THAI</h1>
-              </div>
-              {/* <div
+          <div
+            data-sal="fade"
+            data-sal-delay="300"
+            data-sal-duration="1200"
+            data-sal-easing="ease-in-back"
+          >
+            <h1 className={introStyles.title}>SAKCHATREE MUAY THAI</h1>
+          </div>
+          {/* <div
               data-sal="fade"
               data-sal-delay="400"
               data-sal-duration="1100"
@@ -43,7 +45,7 @@ const Intro = () => {
               <h2 className={introStyles.subTitle}>...</h2>
               <hr className={introStyles.hr} />
             </div> */}
-              {/* <div
+          {/* <div
                 data-sal="slide-down"
                 data-sal-delay="300"
                 data-sal-duration="1200"
