@@ -3,39 +3,39 @@
 .background-image {
   position: relative;
   background: url("../../images/fight-corner-retro.jpg") no-repeat;
-  background-position: right 0px bottom -80px;
+  background-position: right 0px;
   // opacity: 0.2;
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 1500px) {
-    background-position: right 0px bottom -40px;
+    background-position: right 0px;
   }
   @media (max-width: 1400px) {
-    background-position: right 0px bottom -20px;
+    background-position: right 0px;
   }
   @media (max-width: 1300px) {
     background-position: right 0px bottom 0px;
   }
   @media (max-width: 1230px) {
-    background-position: right 0px bottom 30px;
+    background-position: right 0px bottom 0px;
   }
   @media (max-width: 1000px) {
-    background-position: right -50px bottom 30px;
+    background-position: right -50px bottom 0px;
   }
   @media (max-width: 900px) {
-    background-position: right -150px bottom 30px;
+    background-position: right -150px bottom 0px;
   }
   @media (max-width: 780px) {
-    background-position: right -240px bottom 30px;
+    background-position: right -240px bottom 0px;
   }
   @media (max-width: 767px) {
-    background-position: right -240px bottom 10px;
+    background-position: right -240px bottom 0px;
   }
   @media (max-width: 700px) {
-    background-position: right -270px bottom 10px;
+    background-position: right -270px bottom 0px;
   }
   @media (max-width: 620px) {
-    background-position: right -320px bottom 10px;
+    background-position: right -320px bottom 0px;
   }
   @media (max-width: 568px) {
     // background-attachment: scroll;
