@@ -14,17 +14,17 @@
     background-position: right -180px bottom 0px;
   }
   @media (max-width: 568px) {
-    // background-attachment: scroll;
-    background-position: right -250px bottom 0px;
+    background-attachment: scroll;
+    background-position: right 0 bottom 0px;
   }
   @media (max-width: 500px) {
-    background-position: right -300px bottom 0px;
+    background-position: right -90px bottom 0px;
   }
   @media (max-width: 380px) {
-    background-position: right -350px bottom 0px;
+    background-position: right -150px bottom 0px;
   }
   @media (max-width: 310px) {
-    background-position: right -400px bottom 0px;
+    background-position: right -200px bottom 0px;
   }
 }
 

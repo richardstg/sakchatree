@@ -17,17 +17,25 @@
   @media (max-width: 650px) {
     background-position: right -320px bottom 0;
   }
+  @media (max-width: 568px) {
+    background-attachment: scroll;
+    background-position: right -150px bottom 0px;
+    // background-position: right 0 bottom 0;
+  }
   @media (max-width: 500px) {
-    background-position: right -380px bottom 0;
+    background-position: right -250px bottom 0;
   }
   @media (max-width: 420px) {
-    background-position: right -420px bottom 0;
+    background-position: right -350px bottom 0;
   }
   @media (max-width: 360px) {
-    background-position: right -460px bottom 0;
+    background-position: right -420px bottom 0;
   }
   @media (max-width: 320px) {
     background-position: right -500px bottom 0;
+  }
+  @media (max-width: 290px) {
+    background-position: right -600px bottom 0;
   }
 }
 
