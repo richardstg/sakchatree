@@ -1,8 +1,8 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { Container } from "reactstrap"
 
 import fightStyles from "./fight.module.scss"
-import FightImage from "../images/fight"
+// import FightImage from "../images/fight"
 
 const Fight = () => {
   return (

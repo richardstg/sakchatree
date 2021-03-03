@@ -10,9 +10,12 @@
     // background-position: right -300px bottom 0px;
     // background-position: right 0 bottom 0;
   }
-  // @media (max-width: 1000px) {
-  //   background-position: right -40px bottom 0;
-  // }
+  @media (max-width: 500px) {
+    background-position: right -180px bottom 0;
+  }
+  @media (max-width: 350px) {
+    background-position: right -300px bottom 0;
+  }
   // @media (max-width: 900px) {
   //   background-position: right -150px bottom 0;
   // }

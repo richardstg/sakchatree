@@ -41,8 +41,14 @@
     background-attachment: scroll;
     background-position: right -300px bottom 0px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     background-position: right -350px bottom 0px;
+  }
+  @media (max-width: 370px) {
+    background-position: right -390px bottom 0px;
+  }
+  @media (max-width: 290px) {
+    background-position: right -430px bottom 0px;
   }
 }
 
@@ -212,20 +218,20 @@
   }
 }
 
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 300px) {
   .title {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 433px) {
+@media screen and (max-width: 250px) {
   .title {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 371px) {
-  .title {
-    font-size: 1.7rem;
-  }
-}
+// @media screen and (max-width: 371px) {
+//   .title {
+//     font-size: 1.7rem;
+//   }
+// }

@@ -4,13 +4,14 @@ html {
   //min-height: 100vh;
   // overflow-y: scroll;
   // -webkit-overflow-scrolling: touch;
+  background-image: url("../images/noisy.png");
 }
 
 body {
   line-height: $base-line-height;
   font-family: $body-font;
-  background-color: $background-color;
-  background-color: #ffffff;
+  // background-color: $background-color;
+  // background-color: #ffffff;
   // background-color: #f41a54;
   overflow-x: hidden;
 }

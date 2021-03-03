@@ -3,7 +3,7 @@
 .navbar {
   transition: all 0.2s ease-in;
   text-align: center;
-  padding: 20px !important;
+  padding: 20px 40px !important;
   z-index: 110;
   &:focus {
     outline: none;
@@ -14,18 +14,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 3rem;
+    margin-left: 3rem;
   }
   @media (max-width: 1199px) {
     padding: 10px 20px !important;
-    ul {
-      padding: 0;
-    }
     li {
       margin-bottom: 20px;
       list-style: none;
       display: block;
-      margin-right: 0;
+      margin-left: 0;
+    }
+    ul {
+      padding: 0;
     }
   }
 }
@@ -33,68 +33,43 @@
 .up {
   @media (max-width: 1199px) {
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-    background: rgba(47, 50, 56, 0.8);
-    background-image: url("../images/noisy.png");
+    background: rgba(250, 250, 250, 0.801);
+    background-color: rgba(24, 33, 40, 0.701);
+    background: url("../images/noisy.png");
   }
 }
 
 .down {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  background: rgba(47, 50, 56, 0.8);
-  background-image: url("../images/noisy.png");
+  background: rgba(250, 250, 250, 0.801);
+  background-color: rgba(24, 33, 40, 0.701);
+  background: url("../images/noisy.png");
 }
 
 .nav-link {
-  color: #e6e6e6b9;
-  font-size: 1.05rem;
-  // font-weight: bold;
-  // text-transform: lowercase;
-  font-weight: 500;
+  color: #e6e6e6;
+  font-size: 1rem;
   text-decoration: none;
   font-family: $header-font;
+  font-weight: 500;
   transition: 0.5s;
-  letter-spacing: 1.5px;
-  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75),
-    0px -1px 1px rgba(0, 0, 0, 0.75);
-
-  /* Wobble */
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -moz-transform: perspective(1px) translateZ(0);
-  -o-transform: perspective(1px) translateZ(0);
-  -ms-transform: perspective(1px) translateZ(0);
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 15px;
   &:hover {
-    color: #ffffff;
     text-shadow: 0 0 5px #ffffff;
     text-decoration: none;
-
-    /* Wobble */
-    animation: wobble-horizontal-on-hover 0.82s
-      cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-    -moz-animation: wobble-horizontal-on-hover 0.82s
-      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Firefox */
-    -webkit-animation: wobble-horizontal-on-hover 0.82s
-      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Safari and Chrome */
-    -o-animation: wobble-horizontal-on-hover 0.82s
-      cubic-bezier(0.36, 0.07, 0.19, 0.97) both; /* Opera */
-    -ms-animation: wobble-horizontal-on-hover 0.82s
-      cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+    color: rgba(255, 255, 255, 1);
   }
-  padding: 5px 15px;
 }
 
 .active-nav-link {
   a {
-    color: #ffffff;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 1);
     &:hover {
-      color: #ffffff;
+      color: rgba(255, 255, 255, 1);
       text-shadow: 0 0 5px #ffffff;
+      text-decoration: none;
     }
   }
 }
@@ -105,11 +80,7 @@
   svg {
     width: 40px;
     opacity: 0.85;
-    // margin-right: 8px;
-    margin: 0 40px;
-    @media (max-width: 1199px) {
-      margin: 0 15px;
-    }
+    margin-left: 10px;
   }
   p {
     margin: 0;
@@ -121,7 +92,7 @@
 
 /* Navbar Hamburger animation */
 
-$color: #e6e6e6;
+$color: $body-color;
 
 @mixin btn($left, $top) {
   position: relative;
@@ -169,6 +140,7 @@ $color: #e6e6e6;
 }
 
 .toggler {
+  opacity: 0.85;
   border: none !important;
   outline: none !important;
   @include btn(0, 0);
@@ -195,123 +167,5 @@ $color: #e6e6e6;
   }
   &:hover {
     cursor: pointer;
-  }
-}
-
-/*===================*/
-/* WOOBLE HORIZONTAL
-/*===================*/
-
-@-webkit-keyframes wobble-horizontal-on-hover {
-  10%,
-  90% {
-    transform: translate3d(-0.5px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0);
-  }
-}
-
-@keyframes wobble-horizontal-on-hover {
-  10%,
-  90% {
-    transform: translate3d(-0.5px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0);
-  }
-}
-
-@-moz-keyframes wobble-horizontal-on-hover  /* Firefox */ {
-  10%,
-  90% {
-    transform: translate3d(-0.5px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0);
-  }
-}
-
-@-o-keyframes wobble-horizontal-on-hover  /* Opera */ {
-  10%,
-  90% {
-    transform: translate3d(-0.5px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0);
-  }
-}
-@-ms-keyframes wobble-horizontal-on-hover  /* IE */ {
-  10%,
-  90% {
-    transform: translate3d(-0.5px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(2px, 0, 0);
   }
 }

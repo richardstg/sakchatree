@@ -14,13 +14,14 @@
   text-align: center;
   background-image: url("../images/noisy.png");
   p {
-    color: #f5f5f5;
+    color: $body-color;
     font-size: 0.95rem;
   }
   h6 {
     margin-bottom: $vertical-rhythm;
-    color: #f5f5f5;
+    color: $header-color;
   }
+  // line-height: normal;
 }
 
 .copyright {

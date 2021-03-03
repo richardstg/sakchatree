@@ -1,8 +1,8 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { Container } from "reactstrap"
 
 import aboutStyles from "./about.module.scss"
-import AboutImage from "../images/about"
+// import AboutImage from "../images/about"
 
 const About = () => {
   return (

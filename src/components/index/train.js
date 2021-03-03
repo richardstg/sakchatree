@@ -3,7 +3,7 @@ import { Container } from "reactstrap"
 // import { ParallaxBanner } from "react-scroll-parallax"
 
 import trainStyles from "./train.module.scss"
-import TrainImage from "../images/train"
+// import TrainImage from "../images/train"
 
 const Train = () => {
   return (

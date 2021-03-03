@@ -12,7 +12,7 @@ const Footer = () => {
             <p>Email us on contact@sakchatrimuaythai.com</p>
           </Col> */}
           <Col xs={12} md={{ size: 12, offset: 0 }}>
-            <p>Photo credit Eduardo Leal</p>
+            <p>Photo credit: Eduardo Leal</p>
           </Col>
           <Col xs={12} md={{ size: 12, offset: 0 }}>
             <p>
@@ -74,7 +74,7 @@ const Footer = () => {
         <Row>
           <Col xs={12} md={{ size: 12, offset: 0 }}>
             <p className={footerStyles.copyright}>
-              &copy; Sakchatree Muay Thai 2020
+              &copy; Sakchatree Muay Thai 2021
             </p>
           </Col>
         </Row>

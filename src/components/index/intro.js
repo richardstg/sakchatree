@@ -1,8 +1,8 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import { Container } from "reactstrap"
 
 import introStyles from "./intro.module.scss"
-import LandingPageLogoSVG from "../svg/landingPageLogoSVG"
+// import LandingPageLogoSVG from "../svg/landingPageLogoSVG"
 // import { ParallaxBanner } from "react-scroll-parallax"
 
 const Intro = () => {
@@ -34,7 +34,7 @@ const Intro = () => {
             data-sal-duration="1200"
             data-sal-easing="ease-in-back"
           >
-            <h1 className={introStyles.title}>SAKCHATREE MUAY THAI</h1>
+            <h1 className={introStyles.title}>SAKCHATREE MUAY&nbsp;THAI</h1>
           </div>
           {/* <div
               data-sal="fade"
