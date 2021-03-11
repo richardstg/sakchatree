@@ -16,7 +16,7 @@ const Find = () => {
             data-sal-duration="800"
             data-sal-easing="ease-out-bounce"
           >
-            <h3 className={findStyles.title}>Find Us</h3>
+            <h2 className={findStyles.title}>Find Us</h2>
             <p className={findStyles.text}>
               The gym is on the east side of Chiang Mai at 12​ Soi​ 8​
               Charenmuang Road, T.​ Tasala, A. Muang​ Chiang Mai​ 50000​

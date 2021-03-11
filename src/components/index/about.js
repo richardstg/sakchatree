@@ -36,7 +36,7 @@ const About = () => {
               data-sal-duration="800"
               data-sal-easing="ease-in-out-back"
             >
-              <h3 className={aboutStyles.title}>About</h3>
+              <h2 className={aboutStyles.title}>About</h2>
               <p className={aboutStyles.text}>
                 We are a family-style gym on the east side of Chiang Mai, owned
                 and run by Git, former Lumpinee and Rajadamnern Champion.
